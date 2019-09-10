@@ -1,2 +1,2 @@
 discord.py==0.16.12
-asynico==3.5.4
+asynico.py==3.5.4
