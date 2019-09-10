@@ -1,5 +1,7 @@
 import discord
 import asyncio
+import os
+
 client = discord.Client()
 
 async def status_task():
@@ -32,5 +34,8 @@ async def on_ready():
 async def on_message(message):
     if message.content.startswith("또종봇"):
         await message.channel.send(str(message.author.name) + " 넹?")
-
-client.run("NjIwOTUzMjgzMzQ2ODI1MjI2.XXeSxQ.9RFIk9coghBS_3AnQU_NYgtvJ_g")
+        
+        
+        
+access_token = os.environ["bot_token"]
+client.run(access_token)
