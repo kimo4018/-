@@ -1,1 +1,1 @@
-worker: python 또종봇.py
+worker: python bot.py
