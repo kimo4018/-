@@ -5,6 +5,7 @@ import time
 import asyncio
 from captcha.image import ImageCaptcha
 import re
+import os
 
 client = discord.Client()
 
@@ -70,5 +71,5 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
 
-bot_token = "token"
+bot_token = os.environ["token"]
 client.run(bot_token)
